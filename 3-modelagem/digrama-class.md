@@ -4,7 +4,8 @@ Hospital --> Paciente
 class Hospital{
     +int vagas
     +int ocupados
-    +String tipo   
+    +String tipo  
+    +Paciente pacientes 
 }
 
 class Paciente{
