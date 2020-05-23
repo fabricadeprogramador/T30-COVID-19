@@ -34,7 +34,7 @@ function cadastrarHospital() {
 
 }
 
-//RF01
+//RF01, RF06
 function adicionarPaciente(){
     //Acessar os dados do form
     let nome =  document.getElementById("nome").value
