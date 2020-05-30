@@ -5,6 +5,17 @@ class Hospital {
         this.tipo = tipo;
         this.pacientes = pacientes
     }
+
+    adicionarPaciente(p){
+        console.log("Cadastrando ..." + p.nome)
+        this.pacientes.push(p)
+    }
+
+    calcularPorcentagemLotacao(){
+        let numeroVagas =  this.vagas 
+        let numPacientes = this.pacientes.length
+        return numPacientes * 100 / numeroVagas
+    }
 }
 
 class Paciente {
@@ -36,22 +47,30 @@ function cadastrarHospital() {
 
 //RF01, RF06
 function adicionarPaciente(){
+    //#1 - Leitura
     //Acessar os dados do form
     let nome =  document.getElementById("nome").value
     //Acessa o sexo radio checked
     let sexo = document.querySelector("input[type=radio]:checked").value
     //Instancia um objeto contendo os dados do form
     let p =  new Paciente (nome, sexo)
-    //imprimindo no console 
-   // console.log(p)
+
+    //# 2 processamento
     //Adicionando paciente no hospital
-    if (h1.pacientes.length < h1.vagas * 0.7) {
-        h1.pacientes.push(p)
+    if (h1.calcularPorcentagemLotacao()<70) {
+        h1.adicionarPaciente(p)
         console.log("Cadastrado no H1")
+         //#3 Saída Exibir na tela
+        listaHosp1.innerHTML += `<div>${p.nome} | ${p.sexo}</div>`
     }else {
-        h2.pacientes.push(p)
+        h2.adicionarPaciente(p)
         console.log("Cadastrado no H2")
+        listaHosp2.innerHTML += `<div>${p.nome} | ${p.sexo}</div>`
     }
+
+   
+    
+   
 }
 
 //RF10 - Implementar dia 30/05
