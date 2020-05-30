@@ -57,19 +57,22 @@ function adicionarPaciente(){
 
     //# 2 processamento
     //Adicionando paciente no hospital
+    let htmlPaciente =  `<div>${p.nome} | ${p.sexo}</div>`;
+
+    let htmlTituloHosp1 = "Hospital 1"
+    let htmlTituloHosp2 = "Hospital Campanha"
+
+    
+  //#3 Saída Exibir na tela
     if (h1.calcularPorcentagemLotacao()<70) {
         h1.adicionarPaciente(p)
-        console.log("Cadastrado no H1")
-         //#3 Saída Exibir na tela
-        listaHosp1.innerHTML += `<div>${p.nome} | ${p.sexo}</div>`
+        tituloHosp1.innerHTML = htmlTituloHosp1 +  "(" + h1.calcularPorcentagemLotacao()+ "%)"
+        listaHosp1.innerHTML += htmlPaciente
     }else {
         h2.adicionarPaciente(p)
-        console.log("Cadastrado no H2")
-        listaHosp2.innerHTML += `<div>${p.nome} | ${p.sexo}</div>`
+        tituloHosp2.innerHTML = htmlTituloHosp2 + "(" + h2.calcularPorcentagemLotacao()+"%)"
+        listaHosp2.innerHTML += htmlPaciente
     }
-
-   
-    
    
 }
 
