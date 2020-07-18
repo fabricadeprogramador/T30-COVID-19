@@ -3,7 +3,7 @@
 ## RF - Requisitos funcionais
 
     - RF01 - O usuário cadastra o Paciente (nome,sexo)
-    - RF02 - O usuário informa o número de vagas no hospital normal
+    - RF02 - O usuário informa o número de leitos no hospital normal
     - RF03 - O usuário remove o Paciente quando tiver alta
     - RF04 - O Sistema libera mais uma vaga quando o usuário é removido
     - RF05 - O Sistema calcula a porcentagem da ocupação

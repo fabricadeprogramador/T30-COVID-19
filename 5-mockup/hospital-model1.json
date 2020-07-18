@@ -1,0 +1,38 @@
+[ {
+  "_id": "ObjectId("9199929292shahshas")",
+  "name": "h1",
+  "tipo":"c",
+  "leitos": 100,
+  "pacientes": [
+    {
+      "nome": "Jao",
+      "idade": 50,
+      "sexo": "m"
+    },
+    {
+      "nome": "Maria",
+      "idade": 50,
+      "sexo": "m"
+    }
+  ]
+}
+, {
+    "_id": "ObjectId("9199929292shahshas")",
+    "name": "h2",
+    "tipo": "n",
+    "leitos": 100,
+    "pacientes": [
+      {
+        "nome": "Jao",
+        "idade": 50,
+        "sexo": "m"
+      },
+      {
+        "nome": "Maria",
+        "idade": 50,
+        "sexo": "m"
+      }
+    ]
+  }
+  
+]

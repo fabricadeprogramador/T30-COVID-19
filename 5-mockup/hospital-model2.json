@@ -1,0 +1,22 @@
+{
+  "_id": "ObjectId("9199929292shahshas")",
+  "name": "h1",
+  "tipo":"c",
+  "leitos": 100,
+  "pacientes": [1,2]
+}
+
+
+{
+  "_id":1,
+  "nome": "Jao",
+  "idade": 50,
+  "sexo": "m"
+}
+
+{
+  "_id":2,
+  "nome": "Maria",
+  "idade": 50,
+  "sexo": "m"
+}
